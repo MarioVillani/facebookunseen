@@ -8,11 +8,11 @@ I cleaned the source removing all trackings and what was not useful.
 
 To Install :
 
-1) Download the ZIP file. 
-2) Unpack the zip file in a folder and remove the file LICENCE and README.ME
-3) Open Chrome > Tools > Extensions
-4) If not enable, enable Developer flag on top of the window
-5) Click "Create Extension Package"
-6) Select the folder where you unzipped the file, leave the Private Key field blank.
-7) After the creation of the .crx file, drag it in Chrome Extentions Window and install.
-8) Enjoy :)
+1) Download the ZIP file. <br />
+2) Unpack the zip file in a folder and remove the file LICENCE and README.MD  <br />
+3) Open Chrome > Tools > Extensions  <br />
+4) If not enable, enable Developer flag on top of the window  <br />
+5) Click "Create Extension Package"  <br />
+6) Select the folder where you unzipped the file, leave the Private Key field blank.  <br />
+7) After the creation of the .crx file, drag it in Chrome Extentions Window and install.  <br />
+8) Enjoy :)  <br />
