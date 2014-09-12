@@ -1,4 +1,4 @@
-facebookunseen
+Facebook Unseen Plugin 1.1.7.2 No Tracked Version
 ==============
 
 Facebook Unseen Plugin 1.1.7.2 - Cleaned version
