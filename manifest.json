@@ -1,0 +1,29 @@
+{
+   "background": {
+      "scripts": [ "fancy-settings/source/lib/store.js", "background.js", "network.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon48.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "css": [ "read_button.css" ],
+      "js": [ "jquery.js", "read_button.js", "hide_chat_seen.js" ],
+      "matches": [ "*://*.facebook.com/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Blocks the ”seen” feature of the facebook messenger.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCNAkHJjLlyrZX3z9ow7npBoDBI99V6SbVHIPStObwpLUYfVg+ckaLIswDfNmdUfX99Qw3eCJqNmcSswCG5l3aIga9oIdD6uvRfMs5BiWmeT/0WMJcWI7XXPC8EHDFBYPAcf2P2d+BfDNYKb0ISshZv0YKicKnfGu+yhhuZz9lj0wIDAQAB",
+   "manifest_version": 2,
+   "name": "Facebook Unseen",
+   "offline_enabled": true,
+   "options_page": "fancy-settings/source/index.html",
+   "permissions": [ "webRequest", "webRequestBlocking", "*://*.facebook.com/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.7.2"
+}
