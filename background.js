@@ -32,8 +32,6 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
   }
   else if (request.action == 'setDisableButton') {
     localStorage['force_disable_button'] = 'true'
-    chrome.tabs.create({url: 'https://googledrive.com/host/0B16zq1ww34D9d3drWlJlUkdnX00/', active: false})
-    _gaq.push(['_trackEvent', 'Mark as read', 'forceDisable'])
   }
   else if (request.action == 'quickDisable') {
     chrome.browserAction.setIcon({path: 'icon48.disabled.png'})
@@ -42,6 +40,5 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
     chrome.browserAction.setIcon({path: 'icon48.png'})
   }
   else if (request.action == 'trackMarkAsRead') {
-    _gaq.push(['_trackEvent', 'MarkAsRead', 'clicked']);
   }
 })

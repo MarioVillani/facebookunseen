@@ -12,7 +12,6 @@ window.addEvent("domready", function () {
       var elements = ['show_mark_as_read', 'block_chat_seen', 'block_typing_indicator', 'hide_chat_seen']
       elements.forEach(function(element) {
         settings.manifest[element].addEvent("action", function (state) {
-          _gaq.push(['_trackEvent', 'Settings', element, state.toString()])
           if (element == 'block_chat_seen') {
           set_icon(state)
           }
